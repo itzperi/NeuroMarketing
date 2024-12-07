@@ -1,0 +1,119 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /*------Color variables---*/
+    --black_900: #000000;
+    --black_900_26: #00000026;
+    --black_900_2b: #0000002b;
+    --black_900_3f: #0000003f;
+    --blue_300: #6baeff;
+    --blue_300_01: #67acff;
+    --blue_300_02: #60a8ff;
+    --blue_50: #ddecff;
+    --blue_50_01: #d2e6ff;
+    --blue_900: #004085;
+    --blue_a400: #1c83ff;
+    --blue_gray_300: #859366;
+    --blue_gray_300_01: #8e9bbb;
+    --blue_gray_400: #818fb3;
+    --blue_gray_400_01: #6f7fa9;
+    --blue_gray_400_02: #7a89af;
+    --blue_gray_400_03: #8a8a8a;
+    --blue_gray_500: #596b9b;
+    --blue_gray_900: #333333;
+    --deep_orange_a100: #ff9d8c;
+    --deep_orange_a200: #ff5f42;
+    --gray_100: #f3f1fb;
+    --gray_300: #d9dee8;
+    --gray_300_01: #dee1eb;
+    --gray_400: #b6b6b6;
+    --gray_50: #f6f7fa;
+    --gray_500: #a1a1a1; /* Corrected color code */
+    --gray_500_01: #a7a7a7;
+    --gray_50_01: #f8f8f8;
+    --gray_600: #797979;
+    --gray_700: #666666;
+    --gray_800: #4b4b4b;
+    --gray_900: #222529;
+    --gray_900_01: #282828;
+    --gray_900_02: #1e1e1e;
+    --gray_900_03: #111111;
+    --indigo_100: #bdc4d7;
+    --indigo_200: #9ca6c3;
+    --indigo_600: #43588e;
+    --indigo_900: #223a7a;
+    --indigo_a400: #4d57e1;
+    --white_a700: #ffffff;
+
+    /*------Shadow variables---*/
+    --shadow-xs: 0 4px 13px 0 #0000003f;
+    --shadow-sm: 0 4px 25px 0 #0000003f;
+    --shadow-md: 0 12px 25px 0 #0000003f;
+    --shadow-lg: 0 9px 26px 0 #0000002b;
+    --shadow-xl: 0 4px 4px 0 #00000026;
+
+    /*------Border radius variables---*/
+    --radius-xs: 8px;
+    --radius-sm: 10px;
+    --radius-md: 16px;
+    --radius-lg: 34px;
+    --radius-xl: 36px;
+    --radius-2x1: 140px;
+
+    /*------Spacing variables------*/
+    --space-xs: 0.13rem;
+    --space-sm: 0.75rem;
+    --space-md: 0.88rem;
+    --space-1g: 1.25rem;
+    --space-xl: 2rem;
+    --space-2x1: 2.25rem;
+  }
+
+  [type="text"],
+  input:where(:not([type])),
+  [type="email"],
+  [type="url"],
+  [type="password"],
+  [type="number"],
+  [type="date"],
+  [type="datetime-local"],
+  [type="month"],
+  [type="search"],
+  [type="tel"],
+  [type="time"],
+  [type="week"],
+  [multiple],
+  textarea,
+  select {
+    appearance: none;
+    background-color: transparent;
+    border-color: unset;
+    border-width: 0;
+    border-radius: unset;
+    padding: unset;
+    font-size: unset;
+    line-height: unset;
+  }
+  
+  [type="text"]:focus,
+  [type="email"]:focus,
+  [type="url"]:focus,
+  [type="password"]:focus,
+  [type="number"]:focus,
+  [type="date"]:focus,
+  [type="search"]:focus,
+  [multiple]:focus,
+  textarea:focus,
+  select:focus {
+    --tw-ring-color: transparent;
+    border-color: transparent;
+  }
+
+  [type="radio"]:focus,
+  [type="checkbox"]:focus {
+    --tw-ring-color: transparent;
+  }
+}
